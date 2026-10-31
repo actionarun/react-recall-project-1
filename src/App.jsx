@@ -5,6 +5,7 @@ import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound"
+import Navbar from "./components/Navbar";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+    <Navbar/>
     <Routes>
       <Route path="/" element ={<Home />} />
       <Route path="/products" element={<Products />} />
